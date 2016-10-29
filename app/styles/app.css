@@ -2,30 +2,43 @@ body {
   margin-top: 0;
   margin: 0;
   padding: 0;
+  background-color: #F4F4F4;
 }
 
 h1 {
   font-family: Verdana, serif;
+  color: #C0B283;
+}
+
+a {
+  color: #373737;
 }
 
 .nav ul {
   list-style: none;
   background-color: #DCD0C0;
   text-align: right;
-  padding: 0;
-  margin: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 .nav li {
   font-family: Verdana, serif;
+  color: #373737;
   font-size: 1.2em;
   line-height: 40px;
   height: 20px;
-  border-bottom: 1px solid #DCD0C0;
   display: inline-block;
 }
 
 #header {
-  background-color: #DCD0C0;
+  width: 100%;
+  height: 100px;
+}
+
+#footer {
+  font-family: Verdana, serif;
+  color: #373737;
+  text-align: center;
   width: 100%;
   height: 100px;
 }

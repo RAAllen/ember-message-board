@@ -2,9 +2,9 @@
   <h1>Ember Question and Answer Message Board</h1>
   <div class="nav">
     <ul>
-      <li class="index">Home</li>
-      <li class="question">Question Submission</li>
-      <li class="info">Information</li>
+      <li class="index">{{#link-to 'index'}}Home{{/link-to}}</li>
+      <li class="question">{{#link-to 'new-question'}}New Question Submission{{/link-to}}</li>
+      <li class="info">{{#link-to 'info'}}Information{{/link-to}}</li>
     </ul>
   </div>
 </div>
