@@ -1,11 +1,10 @@
-# Ember-message-board
+# Ember Message Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application is a question and answer style message board.
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+You will need the following things properly installed on your computer:
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/RAAllen/ember-message-board.git` 
 * `cd ember-message-board`
 * `npm install`
 * `bower install`
@@ -24,10 +23,6 @@ You will need the following things properly installed on your computer.
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
@@ -39,10 +34,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
@@ -51,3 +42,28 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+## Program Specifications
+
+* _The program will have a main page that displays all the questions._
+* _The program will allow the user to make new questions._
+* _The program will allow the user to edit their questions._
+* _The program will allow the user to delete their questions._
+* _The program will allow the user to navigate to a page displaying all the answers for a question._
+* _The program will allow the user to make new answers._
+* _The program will allow the user to edit their answers._
+* _The program will allow the user to delete their answers._
+
+## Support and Contact Details
+
+_Please contact RebeccaZarsky@gmail.com for technical questions or assistance running the program_
+
+## Technologies Used
+
+_This program utilizes HTML, CSS, Javascript, Sass, Bower, Node and Bootstrap_
+
+## License
+
+*This program is licensed under the MIT license*
+
+Copyright (c) 2016 **_Rebecca Allen_**
