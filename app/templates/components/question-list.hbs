@@ -1,6 +1,5 @@
-<li>
-  {{question.author}} asks "{{question.question}}"
-</li>
-
-
-<!-- {{#link-to 'question' question.id}}{{/link-to}} -->
+<div class="col-sm-4">
+  <div class="question-box">
+    {{#link-to 'question' question.id}}{{question.question}}{{/link-to}}
+  </div>
+</div>
