@@ -1,7 +1,7 @@
 <h2>Welcome to the Ember Message Board!</h2>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-list question=question}}
   {{/each}}
 </ul>
