@@ -16,6 +16,13 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    // Initialize Firebase
+    firebase: {
+      apiKey: "AIzaSyD9zH4hB29rJwSJ3S5tHpQuNjZkfFSwVPM",
+      authDomain: "ember-message-board-cc6cd.firebaseapp.com",
+      databaseURL: "https://ember-message-board-cc6cd.firebaseio.com",
+      storageBucket: "ember-message-board-cc6cd.appspot.com"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
