@@ -15,7 +15,7 @@
     "author": "Ian Baum",
     "details": "Cosplay required."
   }, {
-    "question": "How many people would be down for a happy hour next friday?",
+    "question": "How many people would be down for a happy hour next Friday?",
     "author": "Lisa MacCarrigan",
     "details": "As the official Epicodus social coordinator I need replies from everyone stat."
   }, {
@@ -26,5 +26,34 @@
     "question": "Anyone want to attend a bizdev event this Thursday?",
     "author": "Anand Angalig",
     "details": "Pretty sure there is going to be free food and drinks so I know you all want in on this."
+  }],
+  "answers": [{
+    "answer": "Yes, yes it does.",
+    "author": "Meredith Alcorn",
+    "question": 0
+  }, {
+    "answer": "What's foodlr? And where am I?",
+    "author": "Andres Garcia",
+    "question": 1
+  }, {
+    "answer": "Yes. And tinder. And maple date. And OKcupid.",
+    "author": "Cornelius Range",
+    "question": 2
+  }, {
+    "answer": "Is it a problem if my cosplay is cat themed?",
+    "author": "Rebecca Allen",
+    "question": 3
+  }, {
+    "answer": "Oh hell yeah. Sign me up!",
+    "author": "Zachary Hedgepath",
+    "question": 4
+  }, {
+    "answer": "Calm down there Zach.",
+    "author": "Nicolas Hurtado",
+    "question": 5
+  }, {
+    "answer": "I am all over this Anand.",
+    "author": "Sam Peppard",
+    "question": 6
   }]
 }
