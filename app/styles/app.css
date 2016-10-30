@@ -32,6 +32,10 @@ a {
   color: #373737;
 }
 
+.container {
+  width: 100%;
+}
+
 .nav ul {
   list-style: none;
   background-color: #DCD0C0;

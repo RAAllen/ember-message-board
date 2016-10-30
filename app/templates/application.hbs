@@ -1,16 +1,18 @@
-<div id="header">
-  <h1>Ember Question and Answer Message Board</h1>
-  <div class="nav">
-    <ul>
-      <li class="index">{{#link-to 'index'}}Home{{/link-to}}</li>
-      <li class="question">{{#link-to 'new-question'}}New Question Submission{{/link-to}}</li>
-      <li class="info">{{#link-to 'info'}}Information{{/link-to}}</li>
-    </ul>
+<div class="container">
+  <div id="header">
+    <h1>Ember Question and Answer Message Board</h1>
+    <div class="nav">
+      <ul>
+        <li class="index">{{#link-to 'index'}}Home{{/link-to}}</li>
+        <li class="info">{{#link-to 'info'}}Information{{/link-to}}</li>
+      </ul>
+    </div>
   </div>
-</div>
-<div id="body">
-  {{outlet}}
-</div>
-<div id="footer">
-  <h4>Copyright © 2016 Rebecca Allen</h4>
+  <div id="body">
+    {{outlet}}
+  </div>
+  <br>
+  <div id="footer">
+    <h4>Copyright © 2016 Rebecca Allen</h4>
+  </div>
 </div>
