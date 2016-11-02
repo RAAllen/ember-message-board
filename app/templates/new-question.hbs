@@ -1,16 +1,5 @@
 <h2>Enter your question below.</h2>
-<form>
-  <div class="form-group">
-    <label for="question">Enter your question:</label>
-    {{input value=question id="question"}}
-  </div>
-  <div class="form-group">
-    <label for="author">Your name:</label>
-    {{input value=author id="author"}}
-  </div>
-  <div class="form-group">
-    <label for="details">Add additional details here:</label>
-    {{input value=details id="details"}}
-  </div>
-  <button {{action 'saveQuestion'}}>Submit</button>
-</form>
+
+<h4>Your question will be answered by other users. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+
+{{new-question  saveQuestion="saveQuestion"}}
