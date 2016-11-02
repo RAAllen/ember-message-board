@@ -3,6 +3,11 @@
 <h3>{{model.question}}</h3>
 <h4>Asked by {{model.author}}</h4>
 <p>Additional details: {{model.details}}</p>
-
+{{#link-to 'question-editor'}}<button class="btn">Edit</button>{{/link-to}}
 
 <h2>Answers:</h2>
+<ul>
+  {{#each sortedAnswers as |answer|}}
+    {{answer-list answer=answer}}
+  {{/each}}
+</ul>
