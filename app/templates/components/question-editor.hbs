@@ -1,1 +1,15 @@
-{{yield}}
+<form>
+  <div class="form-group">
+    <label for="question">Enter your question:</label>
+    {{input value=question id="question" placeholder=question}}
+  </div>
+  <div class="form-group">
+    <label for="author">Your name:</label>
+    {{input value=author id="author" placeholder=author}}
+  </div>
+  <div class="form-group">
+    <label for="details">Add additional details here:</label>
+    {{input value=details id="details" placeholder=question.details}}
+  </div>
+  <button {{action 'update' question}}>Save</button>
+</form>
