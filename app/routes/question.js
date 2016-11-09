@@ -1,14 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  model(params) {
+    return this.store.findRecord('question', params.question_id);
+  },
   actions: {
-    update(question) {
-      var params = {
-        question: this.get('question'),
-        author: this.get('author'),
-        details: this.get('details')
-      };
-      this.sendAction('update', question, params);
+    update(question, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          question.set(key,params[key]);
+        }
+      });
+    question.save();
+    this.transitionTo('index');
     }
   }
 });
