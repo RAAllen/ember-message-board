@@ -4,11 +4,11 @@
     <form>
       <div class="form-group">
         <label for="question">Enter your question:</label>
-        {{input value=question id="question" placeholder=question}}
+        {{input value=question id="question" placeholder=question.question}}
       </div>
       <div class="form-group">
         <label for="author">Your name:</label>
-        {{input value=author id="author" placeholder=author}}
+        {{input value=author id="author" placeholder=question.author}}
       </div>
       <div class="form-group">
         <label for="details">Add additional details here:</label>
@@ -16,6 +16,7 @@
       </div>
       <button class="btn"{{action 'update' question}}>Save</button>
     </form>
+    <button {{action 'delete' question}}>Delete</button>
   </div>
 {{else}}
   <button class="btn" {{action 'updateQuestionForm'}}>Edit</button>
