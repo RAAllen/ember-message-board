@@ -32,6 +32,11 @@ a {
   color: #373737;
 }
 
+ul {
+  text-align: center;
+  list-style: none;
+}
+
 .container {
   width: 100%;
 }
