@@ -1,15 +1,15 @@
 <form>
   <div class="form-group">
     <label for="question">Enter your question:</label>
-    {{input value=question id="question"}}
+    {{input class="form-control" value=question id="question"}}
   </div>
   <div class="form-group">
     <label for="author">Your name:</label>
-    {{input value=author id="author"}}
+    {{input class="form-control" value=author id="author"}}
   </div>
   <div class="form-group">
     <label for="details">Add additional details here:</label>
-    {{input value=details id="details"}}
+    {{input class="form-control" value=details id="details"}}
   </div>
-  <button {{action 'saveQuestion'}}>Submit</button>
+  <button class="btn btn-lg btn-block" {{action 'saveQuestion'}}>Submit</button>
 </form>

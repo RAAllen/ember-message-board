@@ -1,11 +1,7 @@
 <h2>Welcome to the Ember Message Board!</h2>
 
 <div class="row">
-  <div class="col-sm-4">
-    <div class="question-box">
-      {{#link-to 'new-question'}}<button class="btn">Post a Question</button>{{/link-to}}
-    </div>
-  </div>
+  {{#link-to 'new-question'}}<button class="col-sm-4 add-question-box">Post a Question</button>{{/link-to}}
   {{#each model.questions as |question|}}
     {{question-list question=question}}
   {{/each}}
