@@ -4,6 +4,7 @@
 <h4>Asked by {{model.author}}</h4>
 <p>Additional details: {{model.details}}</p>
 {{question-editor question=model update="update" destroyQuestion="destroyQuestion"}}
+<button class="btn" {{action 'addToWatchedQuestions' question}}>Watch</button>
 {{new-answer saveAnswer="saveAnswer" destroyAnswer="destroyAnswer" question=model}}
 <h2>Answers:</h2>
 <ul>

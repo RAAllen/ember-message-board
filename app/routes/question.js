@@ -23,6 +23,9 @@ export default Ember.Route.extend({
       });
       this.transitionTo('index');
     },
+    addToWatchedQuestions() {
+      this.get('questionWatcher').add(question);
+    },
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
