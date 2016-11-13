@@ -23,7 +23,7 @@ export default Ember.Route.extend({
       });
       this.transitionTo('index');
     },
-    addToWatchedQuestions() {
+    addToWatchedQuestions(question) {
       this.get('questionWatcher').add(question);
     },
     saveAnswer(params) {
