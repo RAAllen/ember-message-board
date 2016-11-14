@@ -1,10 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  questionWatcher: Ember.inject.service('question-watcher'),
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
   actions: {
+    addToWatchList(question) {
+      this.get('questionWatcher').add(question);
+    },
     update(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
