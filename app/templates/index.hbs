@@ -1,12 +1,20 @@
 <h2>Welcome to the Ember Message Board!</h2>
 
 <div class="row">
-    {{watched-questions question=question}}
+  <h3>Your Watched Questions:</h3>
+  {{#each model.questions as |question|}}
+    {{#if question.watched}}
+      {{question-list question=question}}
+    {{/if}}
+  {{/each}}
 </div>
 
 <div class="row">
+  <h3>Unwatched Questions:</h3>
   {{#link-to 'new-question'}}<button class="col-sm-4 add-question-box">Post a Question</button>{{/link-to}}
   {{#each model.questions as |question|}}
-    {{question-list question=question}}
+    {{#unless question.watched}}
+      {{question-list question=question}}
+    {{/unless}}
   {{/each}}
 </div>
