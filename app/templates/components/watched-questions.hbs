@@ -1,6 +1,6 @@
 <h3>Your Watched Questions:</h3>
 {{#each questionWatcher.watchedQuestions as |question|}}
   <div class="col-sm-4 question-box">
-    {{#link-to 'question' question.id}}{{question.question}}{{/link-to}}
+    {{question.question}}
   </div>
 {{/each}}
