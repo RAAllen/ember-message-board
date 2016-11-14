@@ -2,11 +2,7 @@
 
 <div class="row">
   <h3>Your Watched Questions:</h3>
-  {{#each model.questions as |question|}}
-    {{#if question.watched}}
-      {{question-list question=question}}
-    {{/if}}
-  {{/each}}
+  {{display-watch-list question=question}}
 </div>
 
 <div class="row">

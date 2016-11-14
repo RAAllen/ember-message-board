@@ -14,9 +14,9 @@
         <label for="details">Add additional details here:</label>
         {{input value=details id="details" placeholder=question.details}}
       </div>
-      <button class="btn"{{action 'update' question}}>Save</button>
+      <button class="btn" {{action 'update' question}}>Save</button>
     </form>
-    <button {{action 'delete' question}}>Delete</button>
+    <button class="btn" {{action 'delete' question}}>Delete</button>
   </div>
 {{else}}
   <button class="btn" {{action 'updateQuestionForm'}}>Edit</button>

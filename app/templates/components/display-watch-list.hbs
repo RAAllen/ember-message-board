@@ -1,0 +1,5 @@
+{{#each watchedList.watchedList as |question|}}
+  <div class="col-sm-4 question-box">
+    {{popular-question question}}{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}
+  </div>
+{{/each}}

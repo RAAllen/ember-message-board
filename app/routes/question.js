@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  watchedList: Ember.inject.service('watched-list'),
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
@@ -35,6 +36,9 @@ export default Ember.Route.extend({
     destroyAnswer(answer) {
       answer.destroyRecord();
       this.transitionTo('question');
+    },
+    watch(question) {
+      this.get('watchedList').add(question);
     }
   }
 });

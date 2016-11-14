@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  watchedQuestions: [],
+  watchedList: [],
 
   add(question) {
-    this.get('watchedQuestions').pushObject(question)
+    this.get('watchedList').pushObject(item);
   }
 });
