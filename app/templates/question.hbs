@@ -4,11 +4,11 @@
 <h4>Asked by {{model.author}}</h4>
 <p>Additional details: {{model.details}}</p>
 {{question-editor question=model update="update" destroyQuestion="destroyQuestion"}}
-<button class="btn" {{action 'addToWatchedQuestions' question}}>Watch</button>
+{{add-to-watch-question-list question=question}}
 {{new-answer saveAnswer="saveAnswer" question=model}}
 <h2>Answers:</h2>
 <ul>
 {{#each model.answers as |answer|}}
-  {{answer-list answer=model delete="delete" destroyAnswer="destroyAnswer"}}
+  {{answer-list answer=model  destroyAnswer="destroyAnswer"}}
 {{/each}}
 </ul>
