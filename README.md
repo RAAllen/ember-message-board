@@ -56,14 +56,14 @@ You will need the following things properly installed on your computer:
 
 ## Support and Contact Details
 
-_Please contact RebeccaZarsky@gmail.com for technical questions or assistance running the program_
+_Please contact RebeccaZarsky@gmail.com for technical questions or assistance running the program._
 
 ## Technologies Used
 
-_This program utilizes HTML, CSS, Javascript, Sass, Bower, Node and Bootstrap_
+_This program utilizes HTML, CSS, Javascript, Sass, Bower, Node and Bootstrap._
 
 ## License
 
-*This program is licensed under the MIT license*
+*This program is licensed under the MIT license.*
 
 Copyright (c) 2016 **_Rebecca Allen_**
